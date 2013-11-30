@@ -1,0 +1,685 @@
+body {
+    color: black;
+    padding-top: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.paper {
+    width: 939px;
+    height: 610px;
+    margin: 0px auto;
+    padding-top: 21.5px;
+    background:url('../img/awb.png');
+    background-size:939px 610px;
+    background-repeat:no-repeat;
+}
+/**
+.red {
+    width: 485.559055118px;
+    height: 311.811023622px;
+    float: left;
+}
+
+.green {
+    width: 279.68503937px;
+    height: 311.811023622px;
+    margin: 0 0 0 487.559055118px;
+}
+
+.yellow {
+    width: 767.133858268px;
+    height: 49.354330709px;
+}
+
+.black {
+    width: 769.133858268px;
+    height: 476.220472441px;
+    margin: 0 auto;
+}
+
+.from {
+    width: 279.57480315px;
+    height: 114.385826772px;
+    border: 1px solid purple;
+    margin: 0 0 0 487.559055118px;
+}
+
+.header {
+    width: 487.559055118px;
+    height: 113.385826772px;
+    float: left;
+}
+
+.headerImg {
+    float: left;
+    width: 180px;
+}
+
+.logoText {
+    margin: -47px 0 0 70px;
+}
+
+.contactUs {
+    text-align: right;
+    font-size: 9px;
+    line-height: 12px;
+    float: left;
+    margin: 0 3px 0 -3px;
+}
+
+.shipperAccount {
+
+}
+
+.shipperRefLabel {
+    font-size: 9px;
+    line-height: 8px;
+    margin: 0 0 0 0;
+    float: left;
+    width: 64px;
+}
+
+.clear {
+    clear: both;
+}
+
+.airwaybill {
+    margin: -30px 0 0 340px;
+}
+
+.awbNum {
+    margin: 0 0 0 35px;
+    color: red;
+    font-weight: bold;
+}
+
+.fromLabel {
+    border-bottom: 1px solid black;
+    height: 25px;
+    text-align: center;
+    background: #b0b0b2;
+    padding: 2px 0 0 0;
+}
+
+.shipperNameAddress {
+    height: 63px;
+    padding: 2px 5px 0 5px;
+    width: 280px;
+    text-align: center;
+}
+
+.shipperContact {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 25px;
+    background: #b0b0b2;
+    padding: 8px 0 0 10px;
+}
+
+.contactLabel {
+    width: 65px;
+    font-size: 10px;
+    float: left;
+    font-weight: bold;
+    margin: -2px 0 0 0;
+}
+
+.contactNum {
+    margin: -6px 0 0 65px;
+    width: 195px;
+}
+
+.toLabel {
+    border-bottom: 1px solid black;
+    height: 25px;
+    text-align: center;
+    background: #b0b0b2;
+    padding: 2px 0 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.conContact {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 25px;
+    background: #b0b0b2;
+    padding: 8px 0 0 10px;
+}
+
+.conContactLabel {
+    width: 65px;
+    font-size: 10px;
+    float: left;
+    font-weight: bold;
+    margin: -2px 0 0 0;
+}
+
+.conContactNum {
+    margin: -6px 0 0 65px;
+    width: 195px;
+}
+
+.conNameAddress {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 115px;
+    padding: 2px 5px 0 5px;
+    text-align: center;
+}
+
+.natureGoodsLabel {
+    border-bottom: 1px solid black;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    background: #b0b0b2;
+    padding: 2px 0 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.natureGoods {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 85px;
+    padding: 2px 5px 0 5px;
+    text-align: center;
+}
+
+
+.chargesPortion {
+    width: 155px;
+    height: 275px;
+    
+    margin: 0 0 0 0;
+    float: left;
+}
+
+.chargesLabel {
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    background: #b0b0b2;
+    border-bottom: 1px solid black;
+}
+
+.cashCharge {
+    height: 22px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.cash {
+    width: 40px;
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+.checkCash {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    margin: 4px 0 0 2px;
+    float: left;
+}
+
+.charge {
+    float: left;
+    width: 60px;
+    margin: 0 0 0 10px;
+}
+
+.checkCharge {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    margin: 4px 0 0 3px;
+    float: left;
+}
+
+.chargeHolder {
+    height: 21px;
+    border-bottom: 1px solid black;
+    font-size: 11px;
+    padding: 6px 0 0 1px;
+}
+
+.lchargeHolder {
+    height: 21px;
+    padding: 6px 0 0 1px;
+    font-size: 11px;
+}
+
+.theRestPortion {
+    width: 330px;
+    height: 275px;
+    
+    margin: 0 0 0 157px;
+}
+
+.upperRest {
+    width: 330;
+    height: 216px;
+}
+
+.theRestLeft {
+    width: 165px;
+    height: 275px;
+    float: left;
+}
+
+.origin {
+    height: 20px;
+    width: 82.5px;
+    text-align: center;
+    font-weight: bold;
+    background: #b0b0b2;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+}
+
+.destination {
+    height: 20px;
+    width: 82.5px;
+    padding: 2px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    background: #b0b0b2;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    font-size: 11px;
+}
+
+.originText {
+    height: 22px;
+    width: 82.5px;
+    padding: 2px 0 0 2px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+}
+
+.destinationText {
+    height: 22px;
+    width: 82.5px;
+    padding: 2px 0 0 2px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+}
+
+.groupCheck {
+    height: 70px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 9px;
+    padding: 4px 0 0 2px;
+}
+
+.checkDomestic {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.domestic {
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.checkInt {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.international {
+
+}
+
+.checkMM {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 10px;
+}
+
+.mm {
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.checkLuz {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.luz {
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.checkVis {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.vis {
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.checkMin {
+    
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.min {
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.via {
+    float: left;
+    margin: 0 8px 0 6px;
+}
+
+.dpc {
+    background: #b0b0b2;
+    height: 21px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 10px;
+    padding: 4px 0 0 3px;
+}
+
+.checkDocu {
+    
+    background: #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.checkParcel {
+    
+    background: #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.checkCargo {
+    
+    background: #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 0;
+}
+
+.deliveredByLabel {
+    background: #b0b0b2;
+    height: 21px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 10px;
+    padding: 4px 0 0 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.deliveredBy {
+    background: #b0b0b2;
+    height: 21px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 10px;
+    padding: 4px 0 0 3px;
+}
+
+.cratingHolder {
+    background: #b0b0b2;
+    height: 21px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 10px;
+    padding: 4px 0 0 14px;
+}
+
+.cratingLabel {
+    float: left;
+    width: 52px;
+}
+
+.checkCratingYes {
+    
+    background: #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 12px;
+}
+
+.checkCratingNo {
+    
+    background: #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 10px;
+}
+
+.perishableHolder {
+    background: #b0b0b2;
+    height: 21px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 10px;
+    padding: 4px 0 0 4px;
+}
+
+.perishableLabel {
+    float: left;
+    width: 62px;
+}
+
+.checkPerishableYes {
+    
+    background: #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 12px;
+}
+
+.checkPerishableNo {
+    
+    background:         #ffffff;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 0 1px 0 10px;
+}
+
+.dimension {
+    height: 20px;
+    width: 163px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    background: #b0b0b2;
+    border-bottom: 1px solid black;
+    padding: 2px 0 0 0;
+    float: left;
+}
+**/
+
+.shipperNameAddress {
+    margin: 36px 0 0 590px;
+    padding: 10px;
+    width: 334px;
+    height: 77px;
+    word-wrap: break-word;  
+}
+
+.left {
+    float: left;
+    margin: 31px 0 0 15px;
+    width: 175px;
+    height: 339px;
+}
+
+.fCharge {
+    margin: 55px 0 0 85px;
+    padding: 6px 3px 0 0;
+    width: 89px;
+    height: 24px;   
+}
+
+.addOnCharge {
+    margin: 0px 0 0 88px;
+    padding: 6px 3px 0 2px;
+    width: 86px;
+    height: 25px; 
+}
+
+.odaCharge {
+    margin: 0px 0 0 64px;
+    padding: 6px 3px 0 2px;
+    width: 110px;
+    height: 27px;  
+}
+
+.perishableCharge {
+    margin: 0px 0 0 102px;
+    padding: 6px 3px 0 2px;
+    width: 72px;
+    height: 27px;  
+}
+
+.valuationCharge {
+    margin: 125px 0 0 55px;
+    padding: 6px 3px 0 2px;
+    width: 119px;
+    height: 27px;  
+    
+}
+
+.cratingCharge {
+    margin: 0 0 0 100px;
+    padding: 6px 3px 0 2px;
+    width: 74px;
+    height: 26px;  
+}
+
+.right {
+    float: left;    
+    margin: 58px 0 0 400px;
+    width: 333px;
+    height: 310px;
+}
+
+.conNameAddress {
+    margin: 0 0 0 0;
+    padding: 10px;
+    width: 333px;
+    height: 145px;     
+}
+
+.conContact {
+    margin: 0 0 0 70px;
+    padding: 4px 3px 0 0;
+    width: 263px;
+    height: 28px;
+}
+
+.nature {
+    margin: 28px 0 0 0px;
+    padding: 10px;
+    width: 333px;
+    height: 107px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    margin: 0 0 0 15px;
+    width: 748px;
+    height: 30px;
+}
+
+.totalCharge {
+    float: left;
+    margin: 0 0 0 80px;
+    padding: 5px 0 0 5px;
+    width: 94px;
+    height: 30px;
+    text-align: center;
+}
+
+.shipperName {
+    float: left;
+    margin: 0 0 0 90px;
+    padding: 5px 0 0 5px;
+    width: 210px;
+    height: 30px;
+}
+
+.date {
+    float: left;
+    margin: 0 0 0 150px;
+    padding: 5px 0 0 5px;
+    width: 110px;
+    height: 30px;
+    font-weight: bold;
+}

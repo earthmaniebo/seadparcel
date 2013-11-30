@@ -1,0 +1,245 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background: url('../img/bg/a/tex3-2.jpg');[]
+    background-position: left;
+    color: black;
+}
+
+table {
+    color: #141415;
+    background-color: white;
+}
+
+.form-group {
+    color: #141415;
+}
+
+.container {
+}
+
+.content-right {
+    position: absolute;
+    margin: 0 0 0 790px;
+}
+
+.tracking {
+    margin: 0 0 0 0; 
+}
+
+.trackingText {
+    background: url('../img/bg/sprinkles.png');
+    border-radius: 3px;
+    padding: 15px 10px 10px 10px;
+}
+
+#wrapper {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#shipment {
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.company-profile {
+    padding: 1px 70px 10px 70px;
+    background: url('../img/bg/sprinkles.png');
+    border-radius: 3px;
+
+}
+
+.footer {
+    margin: 40px 0 -40px 0;
+    padding: 1px 110px 5px 110px;
+    background: url('../img/bg/black_linen_v2.png');
+    color: white;
+}
+
+.footerAddress {
+    float: left;
+    margin: 0 175px 0 0;
+}
+
+.footerContact {
+    float: left;
+    margin: 0 175px 0 0;
+}
+
+.source-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.modalPassword {
+    padding-top: 100px;
+    border-style: none;
+}
+
+.modalDialogPassword {
+    width: auto;
+    top: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .modalDialogPassword {
+    right: auto;
+    left: 50%;
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 500px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+    
+    td:before { 
+        /* Now like a table header */
+        
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    
+    /******************************EMPLOYEES LABEL ******************************/
+    td.employee:nth-of-type(1):before 
+    { 
+        content: "Employee ID";
+        font-weight: bold;
+        margin-right: 50px;
+    }
+
+    td.employee:nth-of-type(2):before 
+    { 
+        content: "Username"; 
+        font-weight: bold;
+        margin-right: 67px;
+    }
+
+    td.employee:nth-of-type(3):before 
+    { 
+        content: "First Name";
+        font-weight: bold;
+        margin-right: 62px;
+    }
+
+    td.employee:nth-of-type(4):before 
+    { 
+        content: "Middle Name";
+        font-weight: bold;
+        margin-right: 47px; 
+    }
+
+    td.employee:nth-of-type(5):before 
+    { 
+        content: "Last Name"; 
+        font-weight: bold;
+        padding-right: 73px;
+    }
+
+    td.employee:nth-of-type(6):before 
+    { 
+        content: "Address";
+        font-weight: bold;
+        margin-right: 78px; 
+    }
+
+    td.employee:nth-of-type(7):before 
+    { 
+        content: "Position"; 
+        font-weight: bold;
+        margin-right: 78px;
+    }
+
+    /******************************CLIENTS LABEL ******************************/
+    td.client:nth-of-type(1):before 
+    { 
+        content: "Client ID";
+        font-weight: bold;
+        margin-right: 96px;
+    }
+
+    td.client:nth-of-type(2):before 
+    { 
+        content: "Company Name"; 
+        font-weight: bold;
+        margin-right: 48px;
+    }
+
+    td.client:nth-of-type(3):before 
+    { 
+        content: "Address";
+        font-weight: bold;
+        margin-right: 98px;
+    }
+
+    td.client:nth-of-type(4):before 
+    { 
+        content: "Contact #";
+        font-weight: bold;
+        margin-right: 90px; 
+    }
+
+    td.client:nth-of-type(5):before 
+    { 
+        content: "Contact Person"; 
+        font-weight: bold;
+        padding-right: 60px;
+    }
+
+    td.client:nth-of-type(6):before 
+    { 
+        content: "Assigned Employee";
+        font-weight: bold;
+        margin-right: 20px; 
+    }
+
+}
