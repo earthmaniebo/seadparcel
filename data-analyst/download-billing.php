@@ -14,7 +14,7 @@
         }
         
         $grandTotal = $total + $vat;
-        $header = "<style>td{padding: 0 20px 0 20px; text-align:center;} th{text-align:center;}</style><h1 text-align='center'>Billing Reports of Sead Parcel Services</h1><p text-align='center'><strong>Client: </strong>".$client."<br><strong>From:</strong> ". $_POST["fromDate"] . " <strong>To:</strong> ". $_POST["toDate"] . "<br><strong>Printed by:</strong> " . $_SESSION["firstName"] . " " . $_SESSION["lastName"]."</p><br><br>";
+        $header = "<style>td{padding: 0 20px 0 20px; text-align:center;} th{text-align:center;}</style><h1 text-align='center'>Billing Reports of Sead Parcel Services</h1><p text-align='center'><strong>Client: </strong>".$client."<br><strong>From:</strong> ". $_POST["fromDate"] . " <strong>To:</strong> ". $_POST["toDate"] . "</p><br><br>";
 
         $table = "<table style='margin:50px 0 0 780px;'>";
         if(isset($_POST["vat"])) {
