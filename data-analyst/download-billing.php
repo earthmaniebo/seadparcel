@@ -2,13 +2,13 @@
     session_start();
     if(isset($_POST["content"]))
     {
+        $client = "N/A";
         $total = (float)$_POST["total"];
             $vat = 0;
         if(isset($_POST["vat"])) {
             $vat = $total * .12;
         }
 
-        $client = "N/A";
         if($_POST["client"] != 'DEFAUL') {
             $client = $_POST["client"];
         }
@@ -41,7 +41,8 @@
                     </table>";
 
         $footer = $table . $displayTotal . $displayVat . $displayGrandTotal;
-        $content = $header . $_POST["content"] . $footer;
+        $footer2 = "<br><p text-align='center'><strong>Printed by:</strong> " . $_SESSION["firstName"] . " " . $_SESSION["lastName"] . "</p>";
+        $content = $header . $_POST["content"] . $footer . $footer2;
         require_once('../html2pdf/html2pdf.class.php');
         $html2pdf = new HTML2PDF('L','A4','fr');
         $html2pdf->WriteHTML($content);
