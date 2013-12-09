@@ -13,7 +13,7 @@
             var seadawbnum = document.getElementById("seadawbnum").value;
             var numbers = /[^0-9]/g;
 
-            var result = numbers.test(seadawbnum);
+            var result = numbers.test(seadawbnum);	
             
             if(seadawbnum == "") {
                 alert("SEAD-AWB Number field is empty.");
@@ -72,23 +72,24 @@
             </div>
         </div>
             <div class="content-right">
-                <div class="tracking">
+                <div class="well tracking">
                 <h1 class="text-center">Track and Trace</h1>
                     <form class="form-inline" role="form" method="POST" action="tracking.php">
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg" id="seadawbnum" name="seadawbnum" placeholder="SEAD-AWB Number">
+                            <input type="text" class="form-control" id="seadawbnum" name="seadawbnum" placeholder="SEAD-AWB Number">
                         </div>
                         <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg" name="track" onclick="return InputVal();">Track</button>
+                        <button type="submit" class="btn btn-primary" name="track" onclick="return InputVal();">Track</button>
                         </div>
                     </form>
                 </div>
                 <br><br>
-                <div class="trackingText" style="width:350px" ><p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat non eros sed vestibulum. Morbi eu nibh facilisis, pellentesque tellus sit amet, congue diam. Morbi eleifend ipsum nec volutpat dictum. Suspendisse potenti. Vestibulum ac euismod nunc. Nam eleifend, dui vel venenatis ultricies, lacus tellus lacinia est, id pellentesque neque mi a nisi. Morbi malesuada ut neque ac mattis. Ut hendrerit eleifend cursus. </p>
+                <div class=" well trackingText" style="width:350px" ><p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat non eros sed vestibulum. Morbi eu nibh facilisis, pellentesque tellus sit amet, congue diam. Morbi eleifend ipsum nec volutpat dictum. Suspendisse potenti. Vestibulum ac euismod nunc. Nam eleifend, dui vel venenatis ultricies, lacus tellus lacinia est, id pellentesque neque mi a nisi. Morbi malesuada ut neque ac mattis. Ut hendrerit eleifend cursus. </p>
 
                 <p align="justify">Suspendisse eget dolor eget ipsum condimentum lacinia sit amet sit amet urna. Nulla a pretium lacus. Sed hendrerit tincidunt posuere. Suspendisse potenti. Vestibulum convallis mauris mi. Donec aliquam mollis libero et pulvinar.</p></div>
             </div>
             <div class="clear"></div>
+            <br>
             <div class="company-profile">
                 <h2 class="text-center">Company Profile</h2>
                 <p>SEAD PARCEL SERVICES is a full service in logistics firm with worldwide Courier and Freight Cargo services based in Manila, Philippines. We are an aggressive, organized, high professional field personnel and proactive goal. Our goal will always be provide safe,  on time and quality services to build customer partnership by “doing it right”  the first time.</p>
