@@ -13,7 +13,6 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li id="nav-index"><a href="index.php">Home</a></li>
-                        <li id="nav-contact-us"><a class="btn" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
