@@ -18,7 +18,7 @@
             /** -- START -- Variables to be provided to view. **/
 
             /** Will display a success message if this is true. **/
-            $isAddedEmployee = false;
+            $isAddedEmployee = "";
 
             /** -- END -- Variables to be provided to view. **/
 
@@ -44,7 +44,7 @@
                 $isSuccess = $employee->addEmployee($employee->getUsername(), $employee->getPassword(), $employee->getLastName(), $employee->getFirstName(), $employee->getMiddleName(), $employee->getAddress(), $employee->getPosition());
 
                 /** Check if the employee was added. **/
-                if($isSuccess) {
+                if($isSuccess == "true") {
 
                     /**
                     * Call the auditTrail function from the globalFunctions.php
@@ -54,7 +54,7 @@
                 }
 
                 else {
-                    $isAddedEmployee = false;
+                    $isAddedEmployee = "false";
                 }
             }
         }
