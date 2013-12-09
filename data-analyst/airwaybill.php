@@ -158,4 +158,4 @@ div {
     </div>
 </body>
 </page>
-<?php } else { header("Location: transactions.php"); }
+<?php } else { header("Location: transactions.php"); } ?>
