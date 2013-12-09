@@ -5,7 +5,7 @@
 body {
     padding-top: 80px;
     padding-bottom: 30px;
-    background: url('../img/bg/a/tex3-2.jpg');[]
+    background: url('../img/bg/a/tex3-2.jpg');
     background-position: left;
     color: black;
 }
@@ -28,13 +28,15 @@ table {
 }
 
 .tracking {
-    margin: 0 0 0 0; 
+    margin: 0 0 0 0;
+    border-radius: 3px;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
 }
 
 .trackingText {
-    background: url('../img/bg/sprinkles.png');
-    border-radius: 3px;
-    padding: 15px 10px 10px 10px;
+		margin: -20px 0 0 0;
+		padding: 15px 10px 10px 10px;
 }
 
 #wrapper {
@@ -46,10 +48,11 @@ table {
 }
 
 #shipment {
-  padding-right: 45px;
-  padding-left: 45px;
-  margin-right: auto;
-  margin-left: auto;
+  adding-right: 45px;
+    padding: 1px 70px 10px 70px;
+    background: url('../img/bg/sprinkles.png');
+    border-radius: 3px;
+
 }
 
 .company-profile {
@@ -73,7 +76,7 @@ table {
 
 .footerContact {
     float: left;
-    margin: 0 175px 0 0;
+    margin: 0 150px 0 0;
 }
 
 .source-image {
