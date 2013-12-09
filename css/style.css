@@ -48,9 +48,8 @@ table {
 }
 
 #shipment {
-  adding-right: 45px;
+  	padding-right: 45px;
     padding: 1px 70px 10px 70px;
-    background: url('../img/bg/sprinkles.png');
     border-radius: 3px;
 
 }
