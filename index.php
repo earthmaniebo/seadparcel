@@ -108,49 +108,6 @@
 <p align="center">By placing emphasis on employee satisfaction, we will ensure our success in market leadership, shareholder value and most importantly, customer satisfaction service, reliability and quality service are the keystones on SEAD PARCEL SERVICES.</p>
             </div>
     </div>
-    <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-horizontal" role="form" method="POST" action="index.php">
-                    <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Full Name</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName" name="name" placeholder="Full Name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputSubject" class="col-sm-2 control-label">Subject</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputComments" class="col-sm-2 control-label">Comments</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" rows="5" id="inputComments" name="comments" placeholder="Your comments here.."></textarea>
-                        </div>
-                    </div>
-            </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" name="send" onclick="return InputVal2();">Send</button>
-        </form>
-        </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
     <?php include "include/footer.php"; ?>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
