@@ -86,7 +86,7 @@
             /** -- START -- Variables to be provided to view. **/
 
             /** Check if adding client is successful. **/
-            $isAdded = false;
+            $isAdded = "lyka";
 
             /** Display all client under the current logged in employee. **/
             $clientView = new Client();

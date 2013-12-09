@@ -227,36 +227,54 @@
                 /** Connect to the database. **/
                 $dbh = $db->getConnection();
 
-                /** Prepare the sql query to be used. **/
-                $stmt = $dbh->prepare("INSERT INTO shipment (clientID, seadawbnum, refNum, shipperName, conName, designation, conAddress, state, conContactNum, pickUpDate, descOfGoods, totalWeight, remarks) VALUES (:clientID, :seadawbnum, :refNum, :shipperName, :conName, :designation, :conAddress, :state, :conContactNum, :pickUpDate, :descOfGoods, :totalWeight, :remarks)");
+                /** Query to check if seadawbnum already exists in the database. **/
+                $checkExisting = $dbh->prepare("SELECT COUNT(*) FROM shipment WHERE seadawbnum = :seadawbnum");
 
-                /** Bind the parameters to the sql query. **/
-                $stmt->bindParam(':clientID', $clientID);
-                $stmt->bindParam(':seadawbnum', $seadawbnum);
-                $stmt->bindParam(':refNum', $refNum);
-                $stmt->bindParam(':shipperName', $shipperName);
-                $stmt->bindParam(':conName', $conName);
-                $stmt->bindParam(':designation', $designation);
-                $stmt->bindParam(':conAddress', $conAddress);
-                $stmt->bindParam(':state', $state);
-                $stmt->bindParam(':conContactNum', $conContactNum);
-                $stmt->bindParam(':pickUpDate', $pickUpDate);
-                $stmt->bindParam(':descOfGoods', $descOfGoods);
-                $stmt->bindParam(':totalWeight', $totalWeight);
-                $stmt->bindParam(':remarks', $remarks);
+                /** Bind seadawbnum **/
+                $checkExisting->bindParam(':seadawbnum', $seadawbnum);
 
-                /** Execute the query. **/
-                $stmt->execute();
+                /** Execute. **/
+                $checkExisting->execute();
 
-                /** Check if insert was successful. **/
-                $count = $stmt->rowCount();
-                if($count > 0) {
-                    return true;
+                /** Check if there are rows fetch. **/
+                if($checkExisting->fetchColumn() > 0) {
+                		return "false";
                 }
 
                 else {
-                    return false;
+                		/** Prepare the sql query to be used. **/
+		                $stmt = $dbh->prepare("INSERT INTO shipment (clientID, seadawbnum, refNum, shipperName, conName, designation, conAddress, state, conContactNum, pickUpDate, descOfGoods, totalWeight, remarks) VALUES (:clientID, :seadawbnum, :refNum, :shipperName, :conName, :designation, :conAddress, :state, :conContactNum, :pickUpDate, :descOfGoods, :totalWeight, :remarks)");
+
+		                /** Bind the parameters to the sql query. **/
+		                $stmt->bindParam(':clientID', $clientID);
+		                $stmt->bindParam(':seadawbnum', $seadawbnum);
+		                $stmt->bindParam(':refNum', $refNum);
+		                $stmt->bindParam(':shipperName', $shipperName);
+		                $stmt->bindParam(':conName', $conName);
+		                $stmt->bindParam(':designation', $designation);
+		                $stmt->bindParam(':conAddress', $conAddress);
+		                $stmt->bindParam(':state', $state);
+		                $stmt->bindParam(':conContactNum', $conContactNum);
+		                $stmt->bindParam(':pickUpDate', $pickUpDate);
+		                $stmt->bindParam(':descOfGoods', $descOfGoods);
+		                $stmt->bindParam(':totalWeight', $totalWeight);
+		                $stmt->bindParam(':remarks', $remarks);
+
+		                /** Execute the query. **/
+		                $stmt->execute();
+
+		                /** Check if insert was successful. **/
+		                $count = $stmt->rowCount();
+		                if($count > 0) {
+		                    return "true";
+		                }
+
+		                else {
+		                    return "false";
+		                }
                 }
+
+                
             }
             catch(PDOException $e) {
                 echo $e->getMessage();
