@@ -65,7 +65,7 @@
                         </div>-->
                         
                             <form class="form-inline" role="form" action="pod.php" method="POST">
-                            <div class="col-md-4" style="margin-right: 60px;">
+                            <div class="col-md-4" style="margin-right: 40px;">
                                 <strong>COMPANY:</strong>
                                 <div class="form-group">
                                     <select class="form-control" name="company" id="company" style="width:250px;">
