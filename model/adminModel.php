@@ -20,29 +20,44 @@
                 /** Connect to the database. **/
                 $dbh = $db->getConnection();
 
-                /** Prepare the sql query to be used. **/
-                $stmt = $dbh->prepare("INSERT INTO employees (username, password, lastName, firstName, middleName, address, position) VALUES (:username, :password, :lastName, :firstName, :middleName, :address, :position)");
+               	/** Query to check if username/password already exists in the database. **/
+                $checkExisting = $dbh->prepare("SELECT COUNT(*) FROM employees WHERE username = :username AND password = :password");
 
-                /** Bind the parameters to the sql query. **/
-                $stmt->bindParam(':username', $username);
-                $stmt->bindParam(':password', $password);
-                $stmt->bindParam(':lastName', $lastName);
-                $stmt->bindParam(':firstName', $firstName);
-                $stmt->bindParam(':middleName', $middleName);
-                $stmt->bindParam(':address', $address);
-                $stmt->bindParam(':position', $position);
+                /** Bind the username and password. **/
+                $checkExisting->bindParam(':username', $username);
+                $checkExisting->bindParam(':password', $password);
 
-                /** Execute the query. **/
-                $stmt->execute();
+                /** Execute. **/
+                $checkExisting->execute();
 
-                /** Check if insert was successful. **/
-                $count = $stmt->rowCount();
-                if($count > 0) {
-                    return true;
+                /** Check if there are rows fetch. **/
+                if($checkExisting->fetchColumn() > 0) {
+                		return "false";
                 }
 
+                /** Check if there are rows fetch. **/
                 else {
-                    return false;
+                	
+                		/** Prepare the sql query to be used. **/
+		                $stmt = $dbh->prepare("INSERT INTO employees (username, password, lastName, firstName, middleName, address, position) VALUES (:username, :password, :lastName, :firstName, :middleName, :address, :position)");
+
+		                /** Bind the parameters to the sql query. **/
+		                $stmt->bindParam(':username', $username);
+		                $stmt->bindParam(':password', $password);
+		                $stmt->bindParam(':lastName', $lastName);
+		                $stmt->bindParam(':firstName', $firstName);
+		                $stmt->bindParam(':middleName', $middleName);
+		                $stmt->bindParam(':address', $address);
+		                $stmt->bindParam(':position', $position);
+
+		                /** Execute the query. **/
+		                $stmt->execute();
+
+		                /** Check if insert was successful. **/
+		                $count = $stmt->rowCount();
+		                if($count > 0) {
+		                    return "true";
+		                }
                 }
             }
             catch(PDOException $e) {
