@@ -65,10 +65,15 @@
             <div class="col-md-7 col-md-offset-2">
                 <h2>Add Employee</h2>
                 <hr>
-                <?php if($isAddedEmployee) { ?>
+                <?php if($isAddedEmployee == "true") { ?>
                 <div class="alert alert-success alert-dismissable">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                     <strong>Employee successfully added.</strong> 
+                </div>
+                <?php } else if($isAddedEmployee == "false") { ?>
+                <div class="alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>Username and Password already exist in the database.</strong> 
                 </div>
                 <?php } ?>
                 <form class="form-horizontal" role="form" method="POST" action="add-employee.php">
