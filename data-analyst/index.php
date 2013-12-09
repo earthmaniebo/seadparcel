@@ -93,8 +93,8 @@
         <?php } ?>
         <div class="row">
             <div class="col-md-3">
-                <img src="../img/admin.png" /><br>
-                <center><strong>Admin</strong></center>
+                <img src="../img/data-analyst.png" /><br>
+                <center><strong>Data Analyst</strong></center>
             </div>
             <div class="col-md-5">
                 <h3>Details <button data-toggle="modal" href="#edit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-edit"></span> Edit</button></h3>
