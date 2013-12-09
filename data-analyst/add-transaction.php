@@ -90,10 +90,16 @@
         <?php require_once "controller/dataAnalystController.php"; ?>
         <div class="row">
             <div class="col-md-12">
-                <?php if($isAdded) { ?>
+                <?php if($isAdded == "true") { ?>
                 <div class="alert alert-success alert-dismissable">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                     <strong>Transaction was successfully added.</strong>
+                </div>
+                <?php } ?>
+                <?php if($isAdded == "false") { ?>
+                <div class="alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <strong>Duplicate SEAD-AWB number.</strong>
                 </div>
                 <?php } ?>
                 <form class="form-horizontal" role="form" method="POST" action="add-transaction.php">
